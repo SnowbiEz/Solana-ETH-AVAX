@@ -1,4 +1,4 @@
-# Project Title
+# Solana-ETH-AVAX Metacrafters Project
 
 Simple overview of use/purpose.
 
