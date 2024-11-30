@@ -160,7 +160,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solanaSmartContracts.sol": "TricotShop"
+			"tricotContract.sol": "TricotShop"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -174,7 +174,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"solanaSmartContracts.sol": {
+		"tricotContract.sol": {
 			"keccak256": "0x33959cbf2675d531ad2be0329f5386cf2490af7516f5657d6ded6852cfa29447",
 			"license": "MIT",
 			"urls": [
