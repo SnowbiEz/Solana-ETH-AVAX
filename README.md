@@ -1,41 +1,38 @@
-# Solana-ETH-AVAX Metacrafters Project
+# Tricot Contract
 
-Simple overview of use/purpose.
-
+A Solidity contract for managing the sale and stock of mana potions, with built-in error handling using `require`, `assert`, and `revert` to ensure correct transactions and stock management.
+t
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+The `tricotContract` contract allows users to purchase tricots, while the owner can manage the stock and pricing.
 
 ## Getting Started
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+- Use Remix IDE or any Solidity-supported IDE to deploy and interact with the contract.
 
-### Executing program
+### Executing Program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+1. Deploy the contract using the Remix IDE.
+2. Use the `updateTricotPrice` function to update the price of tricot (owner only).
+3. Use the `setTricotStockLimit` function to update the stock limit of tricot (owner only).
+4. Use the `modifyTricotStock` function to increase or decrease the stock of tricot (owner only).
+5. Use the `buyTricot` function to purchase Tricots by sending the appropriate amount of Wei.
+
+### Ownership and Stock Management
+
+- The contract owner can adjust tricot prices and stock limits.
+- Users can purchase tricots as long as they do not exceed their ownership limit of 20 potions and also include the required amount of wei.
+
+## Error Handling
+
+This contract incorporates `require`, `assert`, and `revert` statements to safeguard against invalid transactions:
+
+- `require`: Ensures sufficient Wei is sent for purchases, stock limits are not exceeded, and ownership limits are respected.
+- `assert`: Used to ensure that stock levels do not go negative preventing underflow.
+- `revert`: Used to prevent transactions that would exceed the user's potion ownership limit.
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+For troubleshooting, check Remix IDE for compilation errors, runtime issues, or gas limit problems.
