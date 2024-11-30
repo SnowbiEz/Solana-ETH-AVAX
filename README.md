@@ -1,6 +1,6 @@
 # Tricot Contract
 
-A Solidity contract for managing the sale and stock of mana potions, with built-in error handling using `require`, `assert`, and `revert` to ensure correct transactions and stock management.
+A Solidity contract for managing the sale and stock of tricots, with built-in error handling using `require`, `assert`, and `revert` to ensure correct transactions and stock management.
 t
 ## Description
 
@@ -23,7 +23,7 @@ The `tricotContract` contract allows users to purchase tricots, while the owner 
 ### Ownership and Stock Management
 
 - The contract owner can adjust tricot prices and stock limits.
-- Users can purchase tricots as long as they do not exceed their ownership limit of 20 potions and also include the required amount of wei.
+- Users can purchase tricots as long as they do not exceed their ownership limit of 20 tricots and also include the required amount of wei.
 
 ## Error Handling
 
@@ -31,7 +31,7 @@ This contract incorporates `require`, `assert`, and `revert` statements to safeg
 
 - `require`: Ensures sufficient Wei is sent for purchases, stock limits are not exceeded, and ownership limits are respected.
 - `assert`: Used to ensure that stock levels do not go negative preventing underflow.
-- `revert`: Used to prevent transactions that would exceed the user's potion ownership limit.
+- `revert`: Used to prevent transactions that would exceed the user's tricot ownership limit.
 
 ## Help
 
